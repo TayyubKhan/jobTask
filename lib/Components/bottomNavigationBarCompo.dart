@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class BottomNavigationBarCompo extends StatefulWidget {
@@ -21,9 +23,7 @@ class _BottomNavigationBarCompoState extends State<BottomNavigationBarCompo> {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      // Background color of the bottom navigation bar
-      backgroundColor: Colors.pinkAccent.withOpacity(0.1),
-
+      backgroundColor: Colors.black.withOpacity(0.3),
       // Color of the selected item icon and text
       selectedItemColor: Colors.blue,
 
@@ -50,7 +50,8 @@ class _BottomNavigationBarCompoState extends State<BottomNavigationBarCompo> {
         ),
 
         // Bottom navigation bar item 2: Clips
-        const BottomNavigationBarItem(
+        BottomNavigationBarItem(
+          backgroundColor: Colors.black.withOpacity(0.3),
           icon: Image(
             image: AssetImage('Assets/Icons/clips.png'),
           ),
@@ -58,7 +59,8 @@ class _BottomNavigationBarCompoState extends State<BottomNavigationBarCompo> {
         ),
 
         // Bottom navigation bar item 3: Libraries
-        const BottomNavigationBarItem(
+        BottomNavigationBarItem(
+          backgroundColor: Colors.black.withOpacity(0.3),
           icon: Image(
             image: AssetImage('Assets/Icons/libraries.png'),
           ),
@@ -66,7 +68,8 @@ class _BottomNavigationBarCompoState extends State<BottomNavigationBarCompo> {
         ),
 
         // Bottom navigation bar item 4: Chats
-        const BottomNavigationBarItem(
+        BottomNavigationBarItem(
+          backgroundColor: Colors.black.withOpacity(0.3),
           icon: Image(
             image: AssetImage('Assets/Icons/chats.png'),
           ),
@@ -74,7 +77,8 @@ class _BottomNavigationBarCompoState extends State<BottomNavigationBarCompo> {
         ),
 
         // Bottom navigation bar item 5: More
-        const BottomNavigationBarItem(
+        BottomNavigationBarItem(
+          backgroundColor: Colors.black.withOpacity(0.3),
           icon: Image(
             image: AssetImage('Assets/Icons/more.png'),
           ),

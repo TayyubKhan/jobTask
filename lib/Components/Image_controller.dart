@@ -58,8 +58,10 @@ class Image_Compo extends StatelessWidget {
                   ),
                   // Image description
                   const Padding(
-                    padding: EdgeInsets.only(left: 12),
+                    padding: EdgeInsets.only(left: 12,bottom: 10),
                     child: Text(
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
                       'Lorem ipsum dolor sit axamet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
                       style: TextStyle(fontFamily: 'semi', color: textColor),
                     ),
